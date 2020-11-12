@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj": {}
+    "C:\\Users\\Pu\\Desktop\\CRUDMongo\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj": {
+    "C:\\Users\\Pu\\Desktop\\CRUDMongo\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj",
+        "projectUniqueName": "C:\\Users\\Pu\\Desktop\\CRUDMongo\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj",
         "projectName": "CRUDMongoDB",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\CRUDMongoDB\\CRUDMongoDB\\obj\\",
+        "projectPath": "C:\\Users\\Pu\\Desktop\\CRUDMongo\\CRUDMongoDB\\CRUDMongoDB\\CRUDMongoDB.csproj",
+        "packagesPath": "C:\\Users\\Pu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pu\\Desktop\\CRUDMongo\\CRUDMongoDB\\CRUDMongoDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"

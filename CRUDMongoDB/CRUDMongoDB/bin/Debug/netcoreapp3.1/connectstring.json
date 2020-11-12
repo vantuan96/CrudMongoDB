@@ -1,0 +1,6 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "mongodb://localhost:27017/StudentManage",
+    "DefaultType": "MONGO"
+  }
+}

@@ -1,0 +1,67 @@
+﻿@model CRUDMongoDB.Models.Student
+
+@{
+    ViewBag.Title = "Cập nhật Sinh Viên";
+}
+<div class="page-header">
+    <h1>
+        @ViewBag.Title
+    </h1>
+</div>
+<div class="row">
+    @if (TempData["Success"] != null)
+    {
+        <strong style="color:green">@TempData["Success"]</strong>
+    }
+    <strong style="color:red">@ViewBag.Error</strong>
+</div>
+<div class="row">
+    @using (Html.BeginForm("Create", "Student", FormMethod.Post, new
+    {
+        encType = "multipart/form-data",
+        @class =
+"form-horizontal",
+        @role = "form",
+        @id = "frmUser"
+    }))
+    {
+        <div class="form-group">
+            <label class="col-sm-4 control-label no-padding-right">Họ và Tên </label>
+            <div class="col-sm-6 col-xs-12">
+                @Html.TextBoxFor(n => n.FullName, new
+           { @class = "form-control", @placholder = "họ va ten" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label no-padding-right"> Địa chỉ </label>
+            <div class="col-sm-6 col-xs-12">
+                @Html.TextAreaFor(n => n.Address, new
+           {
+               @class = "form-control",
+               @placeholder = "Mô tả"
+           })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label no-padding-right"> Tuổi </label>
+            <div class="col-sm-6 col-xs-12">
+                @Html.TextAreaFor(n => n.Age, new
+           {
+               @class = "form-control",
+               @placeholder = "Mô tả"
+           })
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label class="col-sm-4 control-label no-padding-right"> Ngày tạo </label>
+            <div class="col-sm-6 col-xs-12">
+                @Html.TextBoxFor(n => n.DateCreate, new
+           {
+               @class = "form-control",
+               @placeholder = "DateCreate"
+           })
+            </div>
+        </div>
+    }
+    </div>
